@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+     <!-- link materi -->
+     <link rel="stylesheet" href="matericss.html">
+    <!-- link navbar -->
+    <link rel="stylesheet" href="materi.html">
+    <link rel="stylesheet" href="turial.html">
+    <link rel="stylesheet" href="kuis.html">
+    <link rel="stylesheet" href="tentang_kami.html">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo fix.png" alt="" height="50"
+                    class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materi.html">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial.html">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kuis.html">Kuis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                    </li>
+                </ul>
+                <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" ></button>
+            </div>
+        </div>
+    </nav>
+
+    <script src="darkmode.js"></script>
+
+    <!-- sidebar -->
+    <div class="container-lg mt-3 ms-3">
+        <div class="row full-height">
+            <!-- sidebar navigasi -->
+            <div class="col-lg-3">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary rounded mt-2">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="nav nav-pills flex-column text-start">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Materi</a>
+      </li>
+
+      <!-- HTML -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">HTML</a>
+        <ul class="nav flex-column ms-3 text-start">
+          <li class="nav-item"><a class="nav-link" href="materi.html">Pengenalan dasar & Struktur HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="taglisthtml.html">Pengenalan Tag & List HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="formhtml.html">Pengenalan Form HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="tabelhtml.html">Pengenalan Tabel HTML</a></li>
+        </ul>
+      </li>
+
+      <!-- CSS -->
+      <li class="nav-item mt-3">
+        <a class="nav-link" href="#">CSS</a>
+        <ul class="nav flex-column ms-3 text-start">
+          <li class="nav-item"><a class="nav-link" href="matericss.html#dasarcss">Pengenalan CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="matericss.html#selector">Selector CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="matericss.html#property">Property Dasar CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hover CSS</a></li>
+        </ul>
+      </li>
+
+      <!-- JavaScript -->
+      <li class="nav-item mt-3">
+        <a class="nav-link" href="#">JavaScript</a>
+        <ul class="nav flex-column ms-3 text-start">
+          <li class="nav-item"><a class="nav-link" href="materijs.html#dasarjs">Pengenalan JS</a></li>
+          <li class="nav-item"><a class="nav-link" href="materijs.html#penggunaan">Penggunaan Variabel dan Aritmatika</a></li>
+        </ul>
+      </li>
+    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- content -->
+            <div class="col-lg-9 mt-2">
+                <!-- mtri dsr html -->
+                <div class="card mb-5">
+                    <div class="card-header">
+                       <h1 id="dasarjs">Pengenalan JavaScript Dasar</h1>
+                    </div>
+                    <div class="card-body dasar-materi">
+                    <h2>Apa itu JavaScript?</h2>
+                    <img src="asset/Team work-bro.png"  alt="" class="img-fluid mb-3" style="width: 50%;" >
+                   <p>Javascript merupakan bahasa pemrograman yang berguna untuk membuat interaksi pada website. sehingga website terlihat lebih hidup. seperti misalnya membuat efek-efek pada website. javascript sudah menjadi salah satu bahasa pemrograman yang wajib dan harus di kuasai untuk membangun website yang modern.</p>
+                   <p>Cara Penggunaan Kode JavaScript bisa ditulis langsung di file HTML menggunakan tag <code>&lt;script&gt;</code>, atau dipisah di file <code>.js</code> eksternal. <br>
+                    Contoh:</p>
+                    <div style="background-color: #ccc;">
+                        <code>
+                        &lt;script&gt; alert("Halo, Dunia!"); &lt;/script&gt;
+                        </code>
+                    </div>
+                    <hr>
+                    <h2 id="penggunaan">Penggunaan Variabel dan Operasi Aritmatika</h2>
+                    <h6>1. Variabel</h6>
+                    <p>Variabel digunakan untuk menyimpan nilai. Dideklarasikan dengan <code>var, let, atau const.</code> <br> Contoh:</p>
+                    <div style="background-color: #ccc;">
+                        <code>
+                        &lt;script&gt; <br>
+		                	var nama = "Malas Ngoding";  <br>
+		                	var alamat = "Jakarta"; <br>
+		                	document.getElementById("nama").innerHTML = nama;<br>
+		                	document.getElementById("alamat").innerHTML = alamat; <br>
+		                &lt;/script&gt;
+                        </code>
+                    </div> <br>
+                    <h6>2. Operasi Aritmatika</h6>
+                    <p>Operator aritmatika digunakan untuk melakukan operasi matematis pada nilai (angka). Berikut adalah daftar operator aritmatika yang umum digunakan di JavaScript:</p>
+                    <table class="tabel-materi">
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>+</code></td>
+      <td>Digunakan untuk Penjumlahan</td>
+    </tr>
+    <tr>
+      <td><code>-</code></td>
+      <td>Digunakan untuk Pengurangan</td>
+    </tr>
+    <tr>
+      <td><code>*</code></td>
+      <td>Digunakan untuk Perkalian</td>
+    </tr>
+    <tr>
+      <td><code>/</code></td>
+      <td>Digunakan untuk Pembagian</td>
+    </tr>
+    <tr>
+      <td><code>%</code></td>
+      <td>Modulus</td>
+    </tr>
+    <tr>
+      <td><code>++</code></td>
+      <td>Digunakan untuk menambah nilai variabel sebanyak 1 (Increment).</td>
+    </tr>
+    <tr>
+      <td><code>--</code></td>
+      <td>Digunakan untuk mengurangi nilai variabel sebanyak 1. (Decrement)</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+    </div>
+                
+</div>
+</div>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <img src="logo fix.png" />
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a href="recipe.html">Recipes</a>
+                |
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">
+                ©2025 DevInsight
+            </p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-light fa-location-dot"></i>
+                <p>
+                    <span>Jl. Urip Sumoharjo No.104, Klitren, Kec. Gondokusuman,
+                        Kota Yogyakarta, Daerah Istimewa Yogyakarta 55221</span>
+                </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+62823-2815-3019</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>
+                    <a href="https://www.castry.com">devinsight@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Cafe</span>
+                Ca-stry is a cafe located in a part of Jakarta, which
+                offers a wide variety of pastries and coffee.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fas fa-brands fa-instagram fa-5"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fas fa-brands fa-twitter fa-5"></i></a>
+                <a href="https://pinterest.com/" target="_blank"><i class="fas fa-brands fa-pinterest fa-6"></i></a>
+
+                <a href="https://youtube.com/" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

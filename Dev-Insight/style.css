@@ -1,0 +1,362 @@
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+/* NAVBAR fiks*/
+.navbar {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #132743, #1e3c72); /* Navy gradient */
+}
+
+.navbar-nav {
+  text-align: center;
+  justify-content: center;
+}
+.navbar .nav-link {
+  color: #fff0f0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #a6d4f2;             
+  background-color: #26415e;   
+  border-radius: 6px;         
+  padding: 6px 12px;
+}
+
+/* SIDEBAR fiks */
+.sidebar-nav {
+  background: linear-gradient(90deg, #132743, #1e3c72); 
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar-nav .nav-link {
+  color: #fff0f0; 
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+  background-color: #a6d4f2;
+  color: #132743; 
+}
+
+/* FOOTER fiks*/
+.footer-distributed {
+  background-color: #1E2E4F ;
+  color: white;
+  padding: 40px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-company-about span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* TENTAMG KAMI  */
+.img-team {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.team .card:hover {
+  transform: scale(1.05);
+  color: #2a3d66;
+}
+
+.team .card {
+  background-color: #2a3d66; 
+  color: white; 
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.961);
+  transition: transform 0.3s ease;
+}
+
+.team .card:hover {
+  transform: scale(1.05);
+  background-color: cornflowerblue;
+}
+
+/* TUTORIAL */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.card-body {
+  padding: 1rem 1.2rem;
+}
+
+.card h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card .card-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.card iframe {
+  border-radius: 8px;
+}
+
+/*  */
+/* BARU DITAMBAH */
+/*  */
+
+/* KUIS */
+.card-kuis {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card-kuis:hover {
+  transform: scale(1.03);
+}
+
+.card-kuis .card-img-top {
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* BTN KUIS */
+a.btn.btn-kuis {
+  background-color: #2a3d66;
+  color: #a6d4f2;
+  border: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.btn.btn-kuis:hover {
+  background-color: #455882;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.btn-kuis {
+  background-color: #455882;
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-kuis:hover {
+  background-color: #455882;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-kuis:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* BTN BERANDA */
+a.btn-home {
+  background-color: #2a3d66;
+  color: #a6d4f2;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;        
+  width: 190px;               
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.btn-home:hover {
+  background-color: #a6d4f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabel Materi */
+.tabel-materi {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.tabel-materi thead {
+  background-color: #f2f2f2;
+}
+
+.tabel-materi th,
+.tabel-materi td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* DARK MODE JS */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  padding: 0 5px;
+}
+
+#dark-mode-toggle::before {
+  content: '🌙';
+}
+
+body.dark-mode #dark-mode-toggle::before {
+  content: '☀️';
+}
+
+/* DARK MODE UNTUK SEMUA */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+/* DARK MODE FOOTER */
+body.dark-mode .footer-distributed {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .footer-links a {
+  color: #87cefa;
+}
+
+body.dark-mode .footer-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+body.dark-mode .footer-icons a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .footer-icons a:hover {
+  color: #87cefa;
+}
+
+/* DARKMODE TNTANG KAMI */
+body.dark-mode .team .card {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark-mode .team .card:hover {
+  background-color: #3a3a3a;
+}
+
+/* WRNA PER TAG & TH */
+body.dark-mode h2,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode li{
+  color: #fffafa;
+}
+body.dark-mode th {
+  color: #000;
+}
+
+/* DM TUTOR */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+body.dark-mode .card-title {
+  color: #87cefa;
+}
+body.dark-mode .card-text {
+  color: #cccccc;
+}
+/* KRITIK SARAM  */
+.kritik{
+  background-color: #001f3f
+}
+.kritik button {
+  background-color: #455882;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  justify-content: center;
+}
+
+.kritik button:hover {
+  background-color: #a6d4f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
